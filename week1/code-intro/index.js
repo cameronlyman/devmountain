@@ -1,3 +1,5 @@
+//"use strict"; // Adding use script so I write cleaner code
+
 ///// Running Code Practice /////
 /*
     In this file, there are 10 problems to complete.
@@ -34,7 +36,7 @@
 
 // CODE HERE
 
-
+let speed = 25;
 
 
 
@@ -57,7 +59,7 @@
 // CODE HERE
 
 
-
+speed = 500; // Setting speed to 500. 500 what, who knows?
 
 
 
@@ -77,7 +79,7 @@
 
 // CODE HERE
 
-
+let faveSnack = "Ice Cream"; // Setting my favorite snack.
 
 
 
@@ -96,7 +98,7 @@
 
 // CODE HERE
 
-
+let faveDrink = "Pedialyte"; // Setting favorite drink to Pedialyte. (Works better than Gatorade)
 
 
 
@@ -117,7 +119,7 @@
 // CODE HERE
 
 
-
+const private = true; // Creating constant boolean called private and setting it to 'true'
 
 
 
@@ -148,10 +150,20 @@
 
 // CODE HERE
 
+// Here's one way to do it
+let netflix = 15;
+let hulu = 7;
+let disney = 5;
+let youtube = 10;
+let peacock = 10;
 
-
-
-
+// A better way would be to use an object as a dictionary
+let dictionary = {}; // Using the name as the key, and the price as the value
+dictionary["netflix"] = 15;
+dictionary["hulu"] = 7;
+dictionary["disney"] = 5;
+dictionary["youtube"] = 10;
+dictionary["peacock"] = 10;
 
 ///// PROBLEM 7 /////
 /*
@@ -167,8 +179,10 @@
 // CODE HERE
 
 
+let total; // Get the total. We could add them together on this line, but I'll do it on the next instead.
+total = netflix + hulu + disney + youtube + peacock;
 
-
+console.log("Our first total is: " + total); // Log the total
 
 
 ///// PROBLEM 8 /////
@@ -190,9 +204,15 @@
 
 // CODE HERE
 
+// Changing the variables
+hulu -= 7;
+peacock = 5;
+netflix = 8;
 
-
-
+// Update the dictionary while we're at it
+dictionary["hulu"] = hulu;
+dictionary["peacock"] = peacock;
+dictionary["netflix"] = netflix;
 
 
 ///// PROBLEM 9 /////
@@ -208,8 +228,14 @@
 
 // CODE HERE
 
+let newTotal = 0;
 
+// I could add them up one at a time, but I'm just going to use a foreach loop instead.
+for (service in dictionary) {
+    console.log(dictionary[service])
+}
 
+console.log("This is our newTotal: " + newTotal);
 
 ///// PROBLEM 9: Bonus Section /////
 /*
@@ -222,8 +248,8 @@
     and compare the numbers.
 */
 
-// console.log('Total: ', total)
-// console.log('New Total: ', newTotal)
+console.log('Total: ', total)
+console.log('New Total: ', newTotal)
 
 /*
     What is happening here? When we run a file 
@@ -264,8 +290,9 @@
 
 // CODE HERE
 
+// Creating a float called 'savings'
+let savings = newTotal / total;
 
-
-
-
+// But why create a variable when we can do it in the console.log() ?
+console.log(newTotal / total);
 
