@@ -3,12 +3,14 @@ const { performance } = require('perf_hooks');
 // Starting array
 let array = [28, 43, -12, 30, 4, 0, 12]
 
+
+// Write your solution below:
+
 // THIS IS FOR MY PERSONAL TESTING FOR PERFORMANCE
 // let array = [];
 // for (let i = 0; i < 100000; i ++) {
 //     array.push(Math.random());
 // }
-// Write your solution below:
 
 // Measure performance
 let startTime = performance.now();
