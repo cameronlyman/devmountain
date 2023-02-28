@@ -71,7 +71,7 @@ if (score >= 90) {
 }
 else {
   // Do integer division
-  switch(~~(score / 10)) {
+  switch(Math.trunc(score / 10)) {
     case 8:
       console.log('B');
       break;
