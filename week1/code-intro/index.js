@@ -118,7 +118,7 @@ let faveDrink = "Pedialyte"; // Setting favorite drink to Pedialyte. (Works bett
 
 // CODE HERE
 
-
+// private is a reserved word. We shouldn't be using it.
 const private = true; // Creating constant boolean called private and setting it to 'true'
 
 
